@@ -196,10 +196,6 @@ h1, h2, h3 {
     margin-bottom: 3rem;
     color: var(--primary);
 }
-
-.fields-container {
-
-}
 .field {
     margin-bottom: 1rem;
 }
@@ -209,9 +205,16 @@ h1, h2, h3 {
     margin-bottom: .5rem;
     display: block;
 }
+.field textarea {
+    height: 20rem;
+}
 .input-text {
     width: 100%;
     border: none;
     padding: 1.5rem;
     border-radius: .5rem;
+}
+/* Footer */
+.footer {
+    text-align: center;
 }
