@@ -3,7 +3,7 @@
     --dark: #212121;
     --primary: #002171;
     --secondary: #5472d3;
-    --grey: #aeaeae;
+    --grey: #757575;
     --light-grey: #DFE9F3;
 
     --main-font: 'Open Sans', sans-serif;
@@ -21,6 +21,7 @@ body {
     font-family: var(--main-font);
     background-image: linear-gradient(to top, var(--light-grey) 0%, var(--light) 100%);
 }
+/* Utilities */
 .container {
     max-width: 120rem;
     margin: 0 auto;
@@ -37,6 +38,7 @@ body {
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
 }
 @media (min-width: 768px) {
     .btn {
@@ -45,12 +47,27 @@ body {
 }
 .btn:hover {
     background-color: var(--secondary);
+    cursor: pointer;
 }
 .shadow {
     box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
     background-color: var(--light);
     padding: 2rem;
     border-radius: 1rem;
+}
+.w-sm-100 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
+.flex {
+    display: flex;
+}
+.align-right {
+    justify-content: flex-end;
 }
 /* Typography */
 h1 {
@@ -157,4 +174,44 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* Contact */
+
+.form {
+    background-color: var(--grey);
+    width: min(60rem, 100%); /* Utilizar el valor mas pequeño */
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.form fieldset {
+    border: none;
+}
+.form legend {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--primary);
+}
+
+.fields-container {
+
+}
+.field {
+    margin-bottom: 1rem;
+}
+.field label {
+    color: var(--light);
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
 }

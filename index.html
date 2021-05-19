@@ -95,7 +95,8 @@
                     veniam!</p>
             </section>
 
-            <section class="service">                <h3>E-Commerce</h3>
+            <section class="service">                
+                <h3>E-Commerce</h3>
                 <div class="icons">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-credit-card" width="40" height="40"
                         viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round"
@@ -116,32 +117,34 @@
 
     <section>
         <h2>Contacto</h2>
-        <form>
+        <form class="form">
             <fieldset>
                 <legend>Contactame llenando todos los campos</legend>
 
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name" placeholder="Nombre">
+                <div class="fields-container">
+                    <div class="field">
+                        <label for="name">Nombre</label>
+                        <input class="input-text" type="text" id="name" placeholder="Nombre">
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Telefono</label>
+                        <input class="input-text" type="tel" id="phone" placeholder="Numero telefonico">
+                    </div>
+                    
+                    <div class="field">
+                        <label for="email">Nombre</label>
+                        <input class="input-text" type="email" id="email" placeholder="Correo Electronico">
+                    </div>
+                    
+                    <div class="field">
+                        <label for="message">Mensaje</label>
+                        <textarea class="input-text" id="message"></textarea>
+                    </div>
                 </div>
 
-                <div>
-                    <label for="phone">Telefono</label>
-                    <input type="tel" id="phone" placeholder="Numero telefonico">
-                </div>
-
-                <div>
-                    <label for="email">Nombre</label>
-                    <input type="email" id="email" placeholder="Correo Electronico">
-                </div>
-
-                <div>
-                    <label for="message">Mensaje</label>
-                    <textarea id="message"></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar">
+                <div class="align-right flex">
+                    <input class="btn w-sm-100" type="submit" value="Enviar">
                 </div>
             </fieldset>
         </form>
